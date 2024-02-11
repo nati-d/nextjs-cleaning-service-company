@@ -2,11 +2,14 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+
+
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 
 export default function Hero() {
   return (
@@ -16,15 +19,16 @@ export default function Hero() {
       pagination={true}
       mousewheel={true}
       keyboard={true}
-      modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+      modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
       className="mySwiper bg-white"
+      autoplay={{ delay: 5000, disableOnInteraction: false }}
+      loop={true}
     >
       <SwiperSlide className='relative flex items-center justify-center'>
         <Image
           src="https://images.pexels.com/photos/4792773/pexels-photo-4792773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt='hero-image'
           fill
-          className=''
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
           <h1 className="text-4xl font-bold mb-4 text-black">Elevate Your Space with Expert Cleaning Services</h1>
