@@ -26,7 +26,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="container mx-auto my-16">
+    <div className="container mx-auto my-16 bg-white">
       <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">Our Services</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
         {servicesData.map((service, index) => (
@@ -37,7 +37,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

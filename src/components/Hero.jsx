@@ -17,7 +17,7 @@ export default function Hero() {
       mousewheel={true}
       keyboard={true}
       modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-      className="mySwiper"
+      className="mySwiper bg-white"
     >
       <SwiperSlide className='relative flex items-center justify-center'>
         <Image

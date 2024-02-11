@@ -3,16 +3,18 @@ import React from 'react'
 import "./globals.css"
 import About from '@/components/About'
 import Services from '@/components/Services'
-import Gallery from '@/components/Gallery'
+import QuoteForm from '@/components/QuoteForm'
+import Company from '@/components/Company'
 // import Testimonials from '@/components/Testimonials'
 
 const HomePage = () => {
   return (
     <div>
       <Hero/>
+      <Company/>
       <About/>
       <Services/>
-      <Gallery/>
+      <QuoteForm/>
       {/* <Testimonials/> */}
       HomePage
     </div>
