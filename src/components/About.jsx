@@ -20,9 +20,10 @@ const About = () => {
           <p className="text-gray-700 leading-relaxed">
             Founded with a commitment to excellence, our company has been
             providing top-notch cleaning services since 2022. Over the years,
-            we've grown, evolved, and established ourselves as a trusted partner
-            for businesses seeking a spotless and welcoming environment.
+            we&apos;ve grown, evolved, and established ourselves as a trusted
+            partner for businesses seeking a spotless and welcoming environment.
           </p>
+
           <p className="text-gray-700 leading-relaxed mt-4">
             As a team, we are dedicated to creating cleaner, healthier, and more
             productive spaces for our clients. Our passion for cleanliness and
