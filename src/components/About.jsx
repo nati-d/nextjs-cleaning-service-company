@@ -5,7 +5,7 @@ import { FaCheckCircle } from "react-icons/fa";
 const About = () => {
   return (
     <div className="container mx-auto p-8 bg-white">
-      <div className="flex flex-col lg:flex-row items-center lg:space-x-12 mb-12">
+      <div className="flex flex-col lg:flex-row items-center lg:space-x-12 mb-32 ">
         <div className="lg:w-1/2">
           <Image
             src="https://images.pexels.com/photos/6195130/pexels-photo-6195130.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -32,7 +32,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center lg:space-x-12 mb-12">
+      <div className="flex flex-col lg:flex-row items-center lg:space-x-12 mb-">
         <div className="lg:w-1/2">
           <h2 className="text-4xl font-bold mb-4 text-black">Why Choose Us</h2>
           <p className="text-gray-700 leading-relaxed">

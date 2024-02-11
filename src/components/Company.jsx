@@ -1,16 +1,46 @@
-import React from 'react';
-import Image from 'next/image';
+"use client"
+import React, { useRef } from "react";
+import Image from "next/image";
+import Slider from "react-slick";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const Company = () => {
+const CompanySlider = () => {
+  const sliderRef = useRef(null);
+  const sliderSettings = {
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const handleNext = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const handlePrev = () => {
+    sliderRef.current.slickPrev();
+  };
+
   return (
-    <section className="mx-auto mt-6">
+    <section className="mx-auto my-12">
       <div className="container px-5 mx-auto lg:px-24">
         <div className="flex flex-col w-full mb-4 text-left lg:text-center">
-          <h1 className="mb-8 text-2xl Avenir font-semibold text-black">
+          <h1 className="mb-8 text-4xl font-semibold text-black">
             Trusted by top-tier product companies
           </h1>
         </div>
-        <div className="grid grid-cols-2 gap-16 mb-16 text-center lg:grid-cols-4">
+       
+        <div className="w-full gray p-3">
+          <Slider ref={sliderRef} {...sliderSettings}>
           <div className="flex items-center justify-center">
             <Image
               src="/assets/Google-Logo.webp"
@@ -47,10 +77,25 @@ const Company = () => {
               className="block object-contain h-16 greyC"
             />
           </div>
+          </Slider>
+          <div className="flex items-center justify-end gap-2 mt-4">
+            <button
+              className="custom-slider-button-next text-4xl purple"
+              onClick={handleNext}
+            >
+              <FaArrowAltCircleLeft />
+            </button>
+            <button
+              className="custom-slider-button-prev text-4xl purple"
+              onClick={handlePrev}
+            >
+              <FaArrowAltCircleRight />
+            </button>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Company;
+export default CompanySlider;
