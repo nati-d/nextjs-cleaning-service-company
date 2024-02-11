@@ -5,7 +5,7 @@ import About from '@/components/About'
 import Services from '@/components/Services'
 import QuoteForm from '@/components/QuoteForm'
 import Company from '@/components/Company'
-// import Testimonials from '@/components/Testimonials'
+import Testimonials from '@/components/Testimonials'
 
 const HomePage = () => {
   return (
