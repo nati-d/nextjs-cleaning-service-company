@@ -3,6 +3,8 @@ import React from 'react'
 import "./globals.css"
 import About from '@/components/About'
 import Services from '@/components/Services'
+import Gallery from '@/components/Gallery'
+// import Testimonials from '@/components/Testimonials'
 
 const HomePage = () => {
   return (
@@ -10,6 +12,8 @@ const HomePage = () => {
       <Hero/>
       <About/>
       <Services/>
+      <Gallery/>
+      {/* <Testimonials/> */}
       HomePage
     </div>
   )
