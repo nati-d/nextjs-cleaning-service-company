@@ -38,7 +38,7 @@ export default function Testimonials() {
     },
   ];
   return (
-    <div className="testimonial-container w-full md:w-[1200px] mx-auto">
+    <div className="testimonial-container w-full  mx-auto bg-white">
       <div className="text-center mb-8">
         <h2 className="text-4xl font-semibold">
           Trusted by Thousands of Happy Customers

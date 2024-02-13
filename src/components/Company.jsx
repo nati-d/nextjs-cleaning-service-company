@@ -31,7 +31,7 @@ const CompanySlider = () => {
   };
 
   return (
-    <section className="mx-auto my-12">
+    <section className="mx-auto my-12 ">
       <div className="container px-5 mx-auto lg:px-24">
         <div className="flex flex-col w-full mb-4 text-left lg:text-center">
           <h1 className="mb-8 text-4xl font-semibold text-black">
@@ -80,13 +80,13 @@ const CompanySlider = () => {
           </Slider>
           <div className="flex items-center justify-end gap-2 mt-4">
             <button
-              className="custom-slider-button-next text-4xl purple"
+              className="custom-slider-button-next text-4xl "
               onClick={handleNext}
             >
               <FaArrowAltCircleLeft />
             </button>
             <button
-              className="custom-slider-button-prev text-4xl purple"
+              className="custom-slider-button-prev text-4xl "
               onClick={handlePrev}
             >
               <FaArrowAltCircleRight />

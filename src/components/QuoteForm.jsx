@@ -21,9 +21,9 @@ const QuoteForm = () => {
   };
 
   return (
-    <div className="container mx-auto my-16">
+    <div className="container mx-auto my-16 bg-blue-100 w-screen border py-5 ">
       <h2 className="text-4xl font-bold mb-8 text-center text-black">Request a Quote</h2>
-      <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 rounded-md shadow-md">
+      <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 rounded-md shadow-lg border">
         <div className="mb-4">
           <label htmlFor="name" className="block text-sm font-medium text-gray-700">
             Name
